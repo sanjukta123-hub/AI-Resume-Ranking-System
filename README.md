@@ -21,7 +21,9 @@ The system processes unstructured resume data and converts it into meaningful in
 
 ⚙️ Project Workflow
 
+
 1. Data Extraction & Preprocessing
+
 
 • Extracted text from PDF and DOCX resumes
 
@@ -31,6 +33,7 @@ The system processes unstructured resume data and converts it into meaningful in
 
 
 2. Skill & Experience Extraction
+
 
 • Extracted relevant technical skills using predefined skill dictionary
 
@@ -42,6 +45,7 @@ The system processes unstructured resume data and converts it into meaningful in
 
 3. Semantic Similarity (AI Matching)
 
+
 • Generated embeddings for job description and resumes
 
 • Calculated similarity scores using vector-based comparison
@@ -51,6 +55,7 @@ The system processes unstructured resume data and converts it into meaningful in
 
 
 4. Resume Scoring System
+
 
 Final Score Calculation:
 
@@ -72,6 +77,7 @@ Experience Matching:
 
 5. ATS Score Simulation
 
+
 The system evaluates resumes like an ATS using:
 
 • Keyword Density Score
@@ -90,6 +96,7 @@ ATS Score =
 
 
 6. Visualization & Dashboard
+
 
 Interactive dashboards built using
 Streamlit & Plotly:
@@ -112,6 +119,7 @@ Streamlit & Plotly:
 
 7. Output
 
+
 • Ranked list of candidates
 
 • Detailed candidate insights
@@ -125,6 +133,7 @@ Streamlit & Plotly:
 
 Technologies Used
 
+
 Programming & Frameworks
 
 • Python
@@ -132,6 +141,7 @@ Programming & Frameworks
 • Streamlit
 
 Libraries
+
 
 • PyPDF2 (PDF parsing)
 
@@ -143,14 +153,19 @@ Libraries
 
 • Regex (text extraction)
 
+
 AI Components
 
+
 • NLP Text Preprocessing
+
 • Embedding-based Similarity
+
 • Skill Extraction Algorithm
 
 
 Model Deployment
+
 
 The system is deployed as a Streamlit web application that allows users to:
 
@@ -164,6 +179,7 @@ The system is deployed as a Streamlit web application that allows users to:
 
 
 📊 Key Features
+
 
 • Multi-resume processing (PDF & DOCX)
 
@@ -182,6 +198,8 @@ The system is deployed as a Streamlit web application that allows users to:
 
 
 Business Impact
+
+
 
 This system helps organizations:
 
