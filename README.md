@@ -45,7 +45,7 @@ The system processes unstructured resume data and converts it into meaningful in
 
 4. Resume Scoring System
 
- Final Score Calculation:
+Final Score Calculation:
 
 Final Score =
 0.6 × Semantic Similarity
@@ -85,11 +85,17 @@ ATS Score =
 Interactive dashboards built using Streamlit & Plotly:
 
 • 🏆 Resume Ranking Table
+
 • 📊 Performance Overview Dashboard
+
 • 📈 Skill Gap Analysis
+
 • 📑 Candidate Comparison
+
 • 📡 Radar Chart (Skill Visualization)
+
 • 🤖 AI Feedback System
+
 • 📝 ATS Screening Simulation
 
 
