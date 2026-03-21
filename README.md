@@ -1,6 +1,6 @@
 # 🤖 AI Resume Ranking & ATS Optimization System
 
-## 📌 Project Overview
+##  Project Overview
 
 The **AI Resume Ranking & ATS Optimization System** is an end-to-end intelligent recruitment solution designed to automate candidate screening and improve hiring efficiency.
 
