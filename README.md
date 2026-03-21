@@ -1,214 +1,158 @@
-🤖 AI Resume Ranking & ATS Optimization System
+# 🤖 AI Resume Ranking & ATS Optimization System
 
-Project Overview
+## 📌 Project Overview
 
-This project presents an end-to-end AI-powered resume ranking system designed to automate candidate evaluation based on job descriptions.
+The **AI Resume Ranking & ATS Optimization System** is an end-to-end intelligent recruitment solution designed to automate candidate screening and improve hiring efficiency.
 
-The system leverages Natural Language Processing (NLP), semantic similarity, and ATS (Applicant Tracking System) scoring techniques to identify the most suitable candidates efficiently.
+This system leverages **Natural Language Processing (NLP)**, **semantic similarity**, and **ATS-based evaluation techniques** to analyze, score, and rank resumes against job descriptions. It transforms unstructured resume data into actionable insights, enabling faster and more accurate hiring decisions.
 
-It combines AI-driven analysis with interactive dashboards to support smarter and faster hiring decisions.
+---
 
+## 📂 Input Data
 
+* **Job Description** (user-provided text input)
+* **Candidate Resumes** (PDF and DOCX formats)
 
-Input Data
+The system processes unstructured textual data and converts it into structured insights for analysis.
 
-• Job Description (user input)
+---
 
-• Candidate Resumes (PDF / DOCX format)
+## ⚙️ Project Workflow
 
-The system processes unstructured resume data and converts it into meaningful insights.
+### 1. Data Extraction & Preprocessing
 
+* Extracted text from resumes using PDF and DOCX parsers
+* Performed text cleaning and normalization to remove noise and inconsistencies
+* Standardized content to ensure accurate downstream processing
 
-⚙️ Project Workflow
+---
 
+### 2. Skill & Experience Extraction
 
-1. Data Extraction & Preprocessing
+* Extracted relevant technical skills using a predefined skill dictionary
+* Identified years of experience using regex-based pattern recognition
+* Aligned candidate profiles with job requirements
 
+---
 
-• Extracted text from PDF and DOCX resumes
+### 3. Semantic Similarity (AI Matching)
 
-• Cleaned and normalized text (removing noise, formatting issues)
+* Generated embeddings for job descriptions and resumes
+* Computed similarity scores using vector-based comparison
+* Enabled context-aware matching beyond traditional keyword search
 
-• Converted all text into a consistent format for analysis
+---
 
+### 4. Candidate Scoring Framework
 
-2. Skill & Experience Extraction
-
-
-• Extracted relevant technical skills using predefined skill dictionary
-
-• Identified years of experience using regex-based pattern matching
-
-• Compared candidate skills with job requirements
-
-
-
-3. Semantic Similarity (AI Matching)
-
-
-• Generated embeddings for job description and resumes
-
-• Calculated similarity scores using vector-based comparison
-
-• Captured contextual meaning beyond keyword matching
-
-
-
-4. Resume Scoring System
-
-
-Final Score Calculation:
+#### Final Score Calculation:
 
 Final Score =
 0.6 × Semantic Similarity
 
-+ 0.25 × Skill Match
-+ 0.15 × Experience Score
+* 0.25 × Skill Match Score
+* 0.15 × Experience Score
 
-Skill Matching:
+- **Skill Matching:** Measured overlap between required and candidate skills
+- **Experience Matching:** Evaluated candidate experience against job requirements
 
-• Compared overlap between job skills and candidate skills
+---
 
-Experience Matching:
+### 5. ATS Score Simulation
 
-• Evaluated candidate experience vs required experience
+The system simulates real-world Applicant Tracking System (ATS) evaluation by assessing:
 
+* Keyword Density
+* Section Presence (Education, Skills, Experience, Projects)
+* Resume Formatting Quality
 
-
-5. ATS Score Simulation
-
-
-The system evaluates resumes like an ATS using:
-
-• Keyword Density Score
-
-• Section Presence (Education, Skills, Experience, Projects)
-
-• Formatting Score (based on resume length)
-
-ATS Score Formula:
+#### ATS Score Formula:
 
 ATS Score =
 0.5 × Keyword Density
 
-+ 0.3 × Section Match
-+ 0.2 × Formatting
+* 0.3 × Section Match
+* 0.2 × Formatting
 
+---
 
-6. Visualization & Dashboard
+### 6. Visualization & Analytics
 
+Developed interactive dashboards using **Streamlit** and **Plotly** to provide:
 
-Interactive dashboards built using
-Streamlit & Plotly:
+* 🏆 Resume Ranking Summary
+* 📊 Performance Overview Dashboard
+* 📈 Skill Gap Analysis
+* 📑 Candidate Comparison
+* 📡 Radar Chart Visualization
+* 🤖 AI-Based Feedback
+* 📝 ATS Screening Insights
 
-• 🏆 Resume Ranking Table
+---
 
-• 📊 Performance Overview Dashboard
+### 7. Output
 
-• 📈 Skill Gap Analysis
+* Ranked list of candidates based on final score
+* Detailed candidate evaluation metrics
+* Skill gap identification and recommendations
+* ATS compatibility analysis
+* Exportable CSV reports for further use
 
-• 📑 Candidate Comparison
+---
 
-• 📡 Radar Chart (Skill Visualization)
+## Technologies Used
 
-• 🤖 AI Feedback System
+### Programming & Frameworks
 
-• 📝 ATS Screening Simulation
+* Python
+* Streamlit
 
+### Libraries
 
+* PyPDF2 (PDF text extraction)
+* python-docx (Word document processing)
+* Pandas (data manipulation)
+* Plotly (data visualization)
+* Regular Expressions (pattern extraction)
 
-7. Output
+### AI Components
 
+* NLP-based text preprocessing
+* Embedding-based semantic similarity
+* Rule-based skill extraction
 
-• Ranked list of candidates
+---
 
-• Detailed candidate insights
+##  Deployment
 
-• Skill gap identification
+The application is deployed as a **Streamlit web-based interface**, enabling users to:
 
-• ATS compatibility results
+* Upload and analyze multiple resumes
+* Input job descriptions dynamically
+* Generate real-time candidate rankings
+* Visualize insights through interactive dashboards
 
-• Downloadable CSV report
+---
 
+##  Key Features
 
-Technologies Used
+* AI-driven resume ranking system
+* Multi-format resume support (PDF & DOCX)
+* Context-aware semantic matching
+* ATS scoring simulation
+* Interactive dashboards and visual analytics
+* Skill gap detection and candidate comparison
+* Exportable reports for decision-making
 
+---
 
-Programming & Frameworks
+## 📈 Business Impact
 
-• Python
+This system enhances recruitment workflows by:
 
-• Streamlit
+* Automating resume screening processes
+* Reducing manual effort and screening time
+* Improving candidate-job matching accuracy
+* Identifying skill gaps effectively
+* Enabling data-driven hiring decisions
 
-Libraries
-
-
-• PyPDF2 (PDF parsing)
-
-• python-docx (DOCX parsing)
-
-• Pandas (data processing)
-
-• Plotly (visualization)
-
-• Regex (text extraction)
-
-
-AI Components
-
-
-• NLP Text Preprocessing
-
-• Embedding-based Similarity
-
-• Skill Extraction Algorithm
-
-
-Model Deployment
-
-
-The system is deployed as a Streamlit web application that allows users to:
-
-• Upload multiple resumes
-
-• Input job descriptions
-
-• Analyze and rank candidates instantly
-
-• Visualize insights through dashboards
-
-
-📊 Key Features
-
-
-• Multi-resume processing (PDF & DOCX)
-
-• AI-based semantic matching (not just keywords)
-
-• ATS scoring simulation
-
-• Interactive analytics dashboards
-
-• Skill gap identification
-
-• Candidate comparison tools
-
-• Exportable reports
-
-
-
-Business Impact
-
-
-
-This system helps organizations:
-
-• Automate resume screening
-
-• Reduce manual hiring effort
-
-• Improve candidate-job matching accuracy
-
-• Identify skill gaps quickly
-
-• Enhance recruitment efficiency
